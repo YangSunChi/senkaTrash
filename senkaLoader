@@ -721,7 +721,7 @@ function library:init()
                 end
 
                 local hoverObj = utility:GetHoverObject();
-                --[[for _,v in next, library.drawings do
+                for _,v in next, library.drawings do
                     local hover = hoverObj == v.Object;
                     if hover and not v.Hover then
                         v.Hover = true;
@@ -730,7 +730,7 @@ function library:init()
                         v.Hover = false;
                         v.MouseLeave:Fire(inputservice:GetMouseLocation());
                     end
-                end]]--
+                end
 
                 if mb1down then
 
